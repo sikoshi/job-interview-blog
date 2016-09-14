@@ -21,6 +21,6 @@ abstract class controller
             extract($data);
         }
 
-        require_once 'application/views/' . $view_file . '.php';
+        require_once dirname(__DIR__) . '/../application/views/' . $view_file .'.php';
     }
 }

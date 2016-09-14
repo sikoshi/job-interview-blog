@@ -31,8 +31,12 @@ class PostsController extends controller
      * */
     public function actionView($id = 1)
     {
+        $data = [];
+
+        $data['time'] = time();
+
         // Обработка нового комментария
-        $this->render('post');
+        $this->render('post', $data);
     }
 
     /**

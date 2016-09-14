@@ -4,4 +4,7 @@
 
 ?>
 
+
+time: <?php if (!empty($time)) echo $time; ?> <br/>
+
 post.php file
