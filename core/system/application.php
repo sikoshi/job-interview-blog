@@ -1,8 +1,8 @@
 <?php
 
-namespace System;
+namespace core\system;
 
-class Application
+class application
 {
     var $params;
 

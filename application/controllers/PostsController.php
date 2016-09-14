@@ -4,9 +4,10 @@
 
 namespace application\controllers;
 
-class PostsController
-{
+use core\system\controller;
 
+class PostsController extends controller
+{
     /**
      * Posts::actionIndex();
      * @desc Главная страница
@@ -17,7 +18,7 @@ class PostsController
      * */
     public function actionIndex($page = 1)
     {
-        return 'posts/index';
+        echo 'posts/index';
     }
 
     /**
@@ -31,7 +32,7 @@ class PostsController
     public function actionView($id = 1)
     {
         // Обработка нового комментария
-        return 'posts/view';
+        $this->render('post');
     }
 
     /**
