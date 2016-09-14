@@ -5,10 +5,23 @@
     </head>
 
     <body>
+        <div id="page">
+            <div id="page_header">
+                <div id="header_logo">
+                    <a href="/">sample blog</a>
+                </div>
 
-        <div id="page_header">Page header</div>
-        <div id="page_content">
-            <?php echo $content; ?>
+                <div id="header_menu">
+                    <a href="/signin">Sign in</a>
+                    <!--<a href="/compose">New post</a>
+                    <a href="/signout">Sign out</a>-->
+                </div>
+
+                <div class="clear"></div>
+            </div>
+            <div id="page_content">
+                <?php echo $content; ?>
+            </div>
         </div>
     </body>
 </html>
