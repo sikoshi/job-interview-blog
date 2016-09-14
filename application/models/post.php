@@ -1,17 +1,12 @@
 <?php
 
-class Post
+namespace application\models;
+
+class post
 {
     public $id;
     public $title;
     public $body;
-
-    function __construct($id, $title, $body)
-    {
-        $this->id    = $id;
-        $this->title = $title;
-        $this->body  = $body;
-    }
 
     /**
      * Post::getTitle();
@@ -43,9 +38,10 @@ class Post
      * */
     public function save()
     {
-        if (empty($this->id))
-        {
+        // Фильтация данных
 
-        }
+        // Проверка полей
+
+        return true;
     }
 }

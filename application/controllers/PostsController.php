@@ -5,6 +5,7 @@
 namespace application\controllers;
 
 use core\system\controller;
+use application\models\post;
 
 class PostsController extends controller
 {
@@ -52,6 +53,21 @@ class PostsController extends controller
      * */
     public function actionCreate()
     {
+        if (!empty($_POST))
+        {
+            $model = new post();
+
+            $model->title = $_POST['create_title'];
+            $model->text  = $_POST['create_text'];
+
+            if ($model->save())
+            {
+                die();
+            }
+
+            die();
+        }
+
         $data = [];
 
         $data['time'] = time();

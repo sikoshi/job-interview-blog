@@ -8,7 +8,7 @@
         <div id="page">
             <div id="page_header">
                 <div id="header_logo">
-                    <a href="/">sample blog</a>
+                    <a href="/">Sample</a>
                 </div>
 
                 <div id="header_menu">

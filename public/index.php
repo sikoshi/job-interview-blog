@@ -2,7 +2,7 @@
 
 ini_set('display_errors', 1);
 
-require_once __DIR__ . '/../core/system/autoloader.php';
+require_once dirname(__DIR__) . '/core/system/autoloader.php';
 
 $loader = new core\system\Psr4AutoloaderClass();
 
@@ -12,8 +12,8 @@ $loader->register();
 $loader->addNamespace('\core\system', dirname(__DIR__) . '/core/system');
 $loader->addNamespace('\application', dirname(__DIR__) . '/application');
 
-$bootstrap = new \core\system\bootstrap();
+$app = new \core\system\app();
 
-$bootstrap->init();
+$app->init();
 
 die();

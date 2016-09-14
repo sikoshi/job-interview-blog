@@ -2,7 +2,7 @@
     <a href="/">Главная</a> &raquo; Новый пост
 </div>
 
-<form method="post">
+<form method="post" action="/create">
 
     <h2>Новый пост</h2>
 
