@@ -18,7 +18,12 @@ class PostsController extends controller
      * */
     public function actionIndex($page = 1)
     {
-        echo 'posts/index';
+        $data = [];
+
+        $data['time'] = time();
+
+        // Обработка нового комментария
+        $this->render('index', $data);
     }
 
     /**
@@ -47,7 +52,11 @@ class PostsController extends controller
      * */
     public function actionCreate()
     {
+        $data = [];
+
+        $data['time'] = time();
+
         // Обработка нового комментария
-        return 'posts/create';
+        $this->render('create', $data);
     }
 }

@@ -12,9 +12,9 @@
                 </div>
 
                 <div id="header_menu">
-                    <a href="/signin">Sign in</a>
-                    <!--<a href="/compose">New post</a>
-                    <a href="/signout">Sign out</a>-->
+                    <a href="/signin">Войти</a>
+                    <a href="/create">Новый пост</a>
+                    <a href="/signout">Выход</a>
                 </div>
 
                 <div class="clear"></div>

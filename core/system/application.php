@@ -51,6 +51,11 @@ class application
         //$this->db->query('CREATE TABLE posts(id INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT, title VARCHAR(255) NOT NULL, body TEXT NOT NULL)');
         //$this->db->query('CREATE TABLE comments(id INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT, post_id INTEGER NOT NULL, author_name VARCHAR(255) NOT NULL, body TEXT NOT NULL)');
     }
+
+    public function run()
+    {
+
+    }
 }
 
 $app = new Application();

@@ -19,8 +19,8 @@ class bootstrap
         $class      = "application\\controllers\\" . $routing->getControllerClass();
         $controller = new $class;
 
-        //echo $controller->$route['action']();
+        echo $controller->{$routing->getControllerAction()}();
 
-        echo $controller->actionView();
+        //echo $controller->actionView();
     }
 }

@@ -6,6 +6,15 @@ body
     color     : darkslategrey;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
+
+
+form fieldset {border:none; margin-bottom: 10px; padding-top: 4px;}
+form fieldset label {display: block; margin-bottom: 4px;}
+form input {border: 1px solid #666; padding: 4px 6px; font-size: large;}
+form button {border:none; padding: 4px 6px; font-size: large;}
+form textarea {border: 1px solid #666; padding: 4px 6px; font-size: large;width: 100%; height: 200px;}
+
+
     #page
     {
         width: 800px;
@@ -14,13 +23,8 @@ body
         #page_header
         {
             height                            : 50px;
-            background                        : midnightblue;
-            -webkit-border-bottom-right-radius: 6px;
-            -webkit-border-bottom-left-radius : 6px;
-            -moz-border-radius-bottomright    : 6px;
-            -moz-border-radius-bottomleft     : 6px;
-            border-bottom-right-radius        : 6px;
-            border-bottom-left-radius         : 6px;
+            background                        : royalblue;
+            margin-top                        : 10px;
         }
             #header_logo
             {
@@ -40,6 +44,10 @@ body
                     font-size      : large;
                     text-decoration: none;
                 }
+                    #header_logo a:active
+                    {
+                        color: #ddd;
+                    }
             #header_menu
             {
                 display      : inline-block;
@@ -54,8 +62,23 @@ body
                 {
                     color: white;
                 }
+                    #header_menu a:active
+                    {
+                        color: #ddd;
+                    }
                 
         #page_content
         {
-
+            margin: 20px 0;
         }
+            #breadcrumbs
+            {
+                margin: 10px 0;
+                color : #666666;
+                font-size: small;
+            }
+                #breadcrumbs a
+                {
+                    color: #666666;
+                    font-size: small;
+                }

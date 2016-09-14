@@ -4,18 +4,35 @@
 
 namespace application\controllers;
 
-class AccountController
+use core\system\controller;
+
+class AccountController extends controller
 {
     /**
-     * Posts::actionIndex();
-     * @desc Главная страница
+     * Posts::actionSignin();
+     * @desc Страница входа
+     *
+     * @return string
+     * */
+    public function actionSignin()
+    {
+        $data = [];
+
+        $this->render('signin', $data);
+    }
+
+    /**
+     * Posts::actionSignOut();
+     * @desc Страница выхода
      *
      * @param integer $page Страница
      *
      * @return string
      * */
-    public function actionIndex($page = 1)
+    public function actionSignOut()
     {
-        return 'posts/index';
+        $data = [];
+
+        $this->render('signout', $data);
     }
 }

@@ -7,7 +7,7 @@ class routing
     private $_request_string    = '';
     private $_routes            = [];
     private $_controller_class  = 'PostsController';
-    private $_controller_action = 'index';
+    private $_controller_action = 'actionIndex';
 
     /**
      * routing::__construct();
@@ -18,7 +18,7 @@ class routing
     public function __construct()
     {
         // loading routes
-        $this->_routes = require_once __DIR__ . '/../config/routes.php';
+        $this->_routes = require_once dirname(dirname(__DIR__)) . '/application/config/routes.php';
     }
 
     /**
@@ -73,8 +73,8 @@ class routing
             {
                 if ($url == $route['route'])
                 {
-                    $this->_controller_class  = $route['controller'];
-                    $this->_controller_action = $route['action'];
+                    $this->_controller_class  = ucfirst($route['controller']) . 'Controller';
+                    $this->_controller_action = 'action' . ucfirst($route['action']);
 
                     return true;
                 }
