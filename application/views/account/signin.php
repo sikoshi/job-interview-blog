@@ -8,12 +8,12 @@
 
     <fieldset>
         <label for="signin_email">E-mail</label>
-        <input id="signin_email" type="email" />
+        <input name="signin_email" id="signin_email" type="email" />
     </fieldset>
 
     <fieldset>
         <label for="signin_password">Пароль</label>
-        <input id="signin_password" type="password" />
+        <input name="signin_password" id="signin_password" type="password" />
     </fieldset>
 
     <button  type="submit">Войти</button>

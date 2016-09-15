@@ -64,8 +64,6 @@ class PostsController extends controller
             {
                 die();
             }
-
-            die();
         }
 
         $data = [];

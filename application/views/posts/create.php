@@ -8,12 +8,12 @@
 
     <fieldset>
         <label for="create_title">Заголовок</label>
-        <input id="create_title" type="text" />
+        <input id="create_title" type="text"  name="create_title"/>
     </fieldset>
 
     <fieldset>
         <label for="create_text">Текст</label>
-        <textarea id="create_text" ></textarea>
+        <textarea id="create_text" name="create_text" ></textarea>
     </fieldset>
 
     <button type="submit">Создать</button>

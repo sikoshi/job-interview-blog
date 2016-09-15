@@ -16,6 +16,11 @@ class AccountController extends controller
      * */
     public function actionSignin()
     {
+        if (!empty($_POST))
+        {
+
+        }
+
         $data = [];
 
         $this->render('signin', $data);

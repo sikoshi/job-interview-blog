@@ -14,9 +14,11 @@ class app
      * */
     public function init()
     {
-        if (file_exists(__DIR__ . 'params.php'))
+        $params_file = __DIR__ . 'params.php';
+
+        if (file_exists($params_file))
         {
-            $params = require_once __DIR__ . 'params.php';
+            $params = require_once $params_file;
 
             if (is_array($params))
             {
